@@ -56,8 +56,8 @@
 
         @media (max-width: 375px) {
             .sound__block {
-                width: 160px;
-                height: 160px;
+                width: 120px;
+                height: 120px;
             }
 
             .play-button {
@@ -67,12 +67,12 @@
 
         @media (min-width: 376px) and (max-width: 768px) {
             .sound__block {
-                width: 160px;
-                height: 160px;
+                width: 120px;
+                height: 120px;
             }
 
             .play-button {
-                font-size: 65px;
+                font-size: 45px;
             }
         }
 
@@ -150,14 +150,14 @@
                     <defs>
                         <path id="circlePath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"></path>
                     </defs>
-                    <text class="font-[Arial] fill-black" font-size="16" sm:font-size="16" md:font-size="16" letter-spacing="2">
+                    <text class="font-[Arial] fill-black" font-size="20" sm:font-size="20" md:font-size="20" letter-spacing="2">
                         <textPath href="#circlePath" startOffset="0%">
                             Әуен • Әуен • Әуен • Әуен • Әуен • Әуен • Әуен • 
                         </textPath>
                     </text>
                 </svg>
-                <button class="play-button mt-2" onclick="toggleAudio()">
-                    <i id="play-icon" class="bi bi-play-circle-fill text-4xl sm:text-5xl md:text-7xl"></i>
+                <button class="play-button" onclick="toggleAudio()">
+                    <i id="play-icon" class="bi bi-play-circle-fill text-4xl/2 sm:text-5xl md:text-7xl"></i>
                 </button>
                 <audio id="audio" src="src/audio/ambient-128950.mp3"></audio>
             </div>
@@ -166,17 +166,17 @@
     <div class="flex flex-col md:flex-row justify-between items-center p-10 w-full">
         <!-- Левый блок -->
         <div class="w-full md:w-[52.5%] font-['main'] text-center text-zinc-800">
-            <h2 class="text-4xl max-md:text-xl mb-12 tracking-wider">ҚҰРМЕТТІ ҚОНАҚТАР!</h2>
-            <h2 class="text-2xl max-md:text-lg tracking-wider">СІЗДЕРДІ</h2>
+            <h2 class="text-4xl max-md:text-2xl mb-12 tracking-wider">ҚҰРМЕТТІ ҚОНАҚТАР!</h2>
+            <h2 class="text-2xl max-md:text-xl tracking-wider">СІЗДЕРДІ</h2>
             <h1 class="w-full mx-auto text-center text-4xl max-md:text-3xl -mt-6 max-md:-mt-4 mb-6 py-4 font-['kz'] tracking-widest text-[#BC8958] border-b-2">
                 Сұлтан мен Меруерттің
             </h1>    
-            <p class="text-2xl max-md:text-lg w-[80%] max-md:w-full mx-auto tracking-wider">
+            <p class="text-2xl max-md:text-xl w-[80%] max-md:w-full mx-auto tracking-wider">
                 ҮЙЛЕНУ ТОЙЫНА АРНАЛҒАН САЛТАНАТТЫ ДАСТАРХАНЫМЫЗДЫҢ ҚАДІРЛІ ҚОНАҒЫ БОЛУҒА ШАҚЫРАМЫЗ!
             </p>
             <div class="flex flex-col items-center justify-center font-['kz2'] mt-8">
-                <h3 class="text-3xl max-md:text-xl">Той иелері:</h3>
-                <h2 class="text-4xl max-md:text-2xl font-['kz'] text-[#BC8958] mt-2 mb-6">Нұрсипат - Бибігүл</h2>
+                <h3 class="text-3xl max-md:text-2xl">Той иелері:</h3>
+                <h2 class="text-4xl max-md:text-4xl/2 font-['kz'] text-[#BC8958] mt-2 mb-6">Нұрсипат - Бибігүл</h2>
             </div>   
         </div>
     
@@ -185,10 +185,10 @@
     
             <!-- Левая часть правого блока (дата + календарь) -->
             <div class="flex flex-col items-center justify-center w-full md:w-[50%]">
-                <h3 class="text-2xl max-md:text-lg">ТОЙ САЛТАНАТЫ:</h3>
-                <h1 class="text-2xl max-md:text-xl font-['kz'] text-[#BC8958] border-b-2">10 тамыз 2025 жылы</h1>
+                <h3 class="text-2xl max-md:text-xl">ТОЙ САЛТАНАТЫ:</h3>
+                <h1 class="text-2xl max-md:text-2xl font-['kz'] text-[#BC8958] border-b-2">10 тамыз 2025 жылы</h1>
                 <!-- Календарь -->
-                <div class="grid grid-cols-1 grid-rows-6 gap-2 mt-8 max-md:text-sm">
+                <div class="grid grid-cols-1 grid-rows-6 gap-2 mt-8 max-md:text-md">
                     <div class="flex flex-row font-bold border-b-1 border-[#ddb07c]">
                         <span class="block text-center w-8">ДС</span>
                         <span class="block text-center w-8">СС</span>
@@ -249,9 +249,9 @@
             <!-- Правая часть правого блока (время и отсчет) -->
             <div class="flex flex-col items-center justify-center w-full md:w-[50%] mt-10 md:mt-0">
                 <div class="flex flex-col items-center justify-center font-['kz2']">
-                    <h3 class="text-2xl max-md:text-xl">Басталуы:</h3>
-                    <h2 class="text-2xl font-['kz'] text-[#BC8958] mt-2 mb-6">19:00 - де</h2>
-                    <h3 class="text-2xl max-md:text-xl text-center">Уақытылы келулеріңізді сұраймыз</h3>
+                    <h3 class="text-2xl max-md:text-2xl">Басталуы:</h3>
+                    <h2 class="text-3xl font-['kz'] text-[#BC8958] mt-2 mb-6">19:00 - де</h2>
+                    <h3 class="text-2xl max-md:text-2xl text-center">Уақытылы келулеріңізді сұраймыз</h3>
                 </div>
     
                 <div class="w-full">
@@ -273,26 +273,26 @@
                     </svg>
     
                     <!-- Таймер -->
-                    <h2 class="text-center text-2xl max-md:text-lg font-['kz2'] mb-4">Той салтанатына дейін:</h2>
+                    <h2 class="text-center text-2xl max-md:text-xl font-['kz2'] mb-4">Той салтанатына дейін:</h2>
                     <ul class="flex flex-row justify-center items-center font-['kz2']">
                         <li class="flex flex-col items-center">
-                            <span id="days" class="text-2xl max-md:text-sm px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
-                            <span class="text-xl max-md:text-sm">күн</span>
+                            <span id="days" class="text-2xl max-md:text-md px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
+                            <span class="text-xl max-md:text-md">күн</span>
                         </li>
-                        <li class="flex flex-col items-center pt-6 px-3 font-['main'] text-4xl max-md:text-2xl text-[#718975]">:</li>
+                        <li class="flex flex-col items-center pt-6 px-3 font-['main'] text-4xl text-[#718975]">:</li>
                         <li class="flex flex-col items-center">
-                            <span id="hours" class="text-2xl max-md:text-sm px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
-                            <span class="text-xl max-md:text-sm">сағат</span>
+                            <span id="hours" class="text-2xl max-md:text-md px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
+                            <span class="text-xl max-md:text-md">сағат</span>
                         </li>
-                        <li class="flex flex-col items-center pt-6 px-3 font-['main'] text-4xl max-md:text-2xl text-[#718975]">:</li>
+                        <li class="flex flex-col items-center pt-6 px-3 font-['main'] text-4xl text-[#718975]">:</li>
                         <li class="flex flex-col items-center">
-                            <span id="minutes" class="text-2xl max-md:text-sm px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
-                            <span class="text-xl max-md:text-sm">минут</span>
+                            <span id="minutes" class="text-2xl max-md:text-md px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
+                            <span class="text-xl max-md:text-md">минут</span>
                         </li>
-                        <li class="flex flex-col items-center pt-6 px-3 font-['main'] text-4xl max-md:text-2xl text-[#718975]">:</li>
+                        <li class="flex flex-col items-center pt-6 px-3 font-['main'] text-4xl text-[#718975]">:</li>
                         <li class="flex flex-col items-center">
-                            <span id="seconds" class="text-2xl max-md:text-sm px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
-                            <span class="text-xl max-md:text-sm">секунд</span>
+                            <span id="seconds" class="text-2xl max-md:text-md px-4 pb-3 rounded-full border-3 border-[#718975]">0</span>
+                            <span class="text-xl max-md:text-md">секунд</span>
                         </li>
                     </ul>
     
@@ -333,7 +333,7 @@
             <div class="flex flex-col items-center justify-center font-['kz2'] my-4 w-[50%] max-md:w-full text-center">
                 <img class="w-full rounded-2xl" src="https://ams2-cdn.2gis.com/previews/1212292030869274624/f0783b8d-df2c-412f-acd9-0e0ae829aea6/3/ru/656x340?api-version=2.0">
                 <h3 class="text-3xl max-md:text-2xl">Мекен-жайымыз:</h3>
-                <h2 class="text-4xl max-md:text-2xl font-['kz'] text-[#BC8958] mt-2 mb-6">Ақтөбе қаласы, «Думаш» мейрамханасы</h2>
+                <h2 class="text-4xl max-md:text-4xl/2 font-['kz'] text-[#BC8958] mt-2 mb-6">Ақтөбе қаласы, «Думаш» мейрамханасы</h2>
                 <a href="https://go.2gis.com/1vr8i" class="px-6 py-3 bg-[#BC8958] font-serif text-white rounded-2xl text-lg font-semibold hover:bg-[#a97449] transition-colors duration-300">
                     2GIS МАРШРУТ
                 </a>
@@ -357,31 +357,31 @@
         <div class="flex relative justify-center items-center w-auto max-md:w-[80%] max-md:mt-8">
             <img class="absolute -top-10 -right-20 max-md:-right-15 rotate-45 w-40 max-md:w-30" src="src/img/flowers.png">
             <img class="absolute -top-14 max-md:-top-8 -left-8 max-md:-left-6 rotate-y-180 w-26 max-md:w-16" src="src/img/butterfly.gif">
-            <p class="w-100 max-md:w-auto bg-[#718975] text-white text-center text-xl max-md:text-base font-['main'] tracking-widest p-10 rounded-sm">ТОЙ БАҒДАРЛАМАСЫ БАЛАЛАРҒА АРНАЛМАҒАНДЫҚТАН ЖӘНЕ ДЕ СІЗДЕРГЕ ЫҢҒАЙЛЫ БОЛУЫ ҮШІН, УАҚЫТТЫ КӨҢІЛДІ ӨТКІЗУ МАҚСАТЫНДА БАЛАЛАРСЫЗ КЕЛУІҢІЗДІ СҰРАЙМЫЗ!</p>
+            <p class="w-100 max-md:w-auto bg-[#718975] text-white text-center text-xl max-md:text-xl font-['main'] tracking-widest p-10 rounded-sm">ТОЙ БАҒДАРЛАМАСЫ БАЛАЛАРҒА АРНАЛМАҒАНДЫҚТАН ЖӘНЕ ДЕ СІЗДЕРГЕ ЫҢҒАЙЛЫ БОЛУЫ ҮШІН, УАҚЫТТЫ КӨҢІЛДІ ӨТКІЗУ МАҚСАТЫНДА БАЛАЛАРСЫЗ КЕЛУІҢІЗДІ СҰРАЙМЫЗ!</p>
             <img class="absolute -bottom-10 -left-20 max-md:-left-15 rotate-225 w-40 max-md:w-30" src="src/img/flowers.png">
         </div>
     </div>
     <div class="flex flex-col justify-center items-center w-full max-md:w-screen">
         <form id="rsvpForm" class="flex flex-col justify-center items-center w-[50%] max-md:w-full p-10 text-center">
-            <h2 class="text-3xl max-md:text-xl font-['kz'] mb-10">Тойға қатысуыңызды растауыңызды сұраймыз!</h2>
-            <p class="text-sm max-md:text-xs w-150 max-md:w-full text-[#718975] font-bold tracking-wider">
+            <h2 class="text-3xl max-md:text-2xl font-['kz'] mb-10">Тойға қатысуыңызды растауыңызды сұраймыз!</h2>
+            <p class="text-sm max-md:text-sm w-150 max-md:w-full text-[#718975] font-bold tracking-wider">
                 АТЫ-ЖӨНІҢІЗ (ЖҰБАЙЫҢЫЗБЕН КЕЛЕТІН БОЛСАҢЫЗ, ЕКЕУІҢІЗДІҢ ДЕ АТЫҢЫЗДЫ ЖАЗУЫҢЫЗДЫ ӨТІНЕМІЗ)
             </p>
             <input type="text" name="name" id="name" class="w-full py-2 px-6 border-2 rounded text-[#BC8958] mt-2 mb-6 font-bold"
                 placeholder="Аты-жөніңіз" required>
-            <label for="select" class="text-sm max-md:text-xs w-150 max-md:w-full max-md:text-left text-[#718975] font-bold tracking-wider">ҚАТЫСУЫҢЫЗ</label>
+            <label for="select" class="text-sm max-md:text-sm w-150 max-md:w-full max-md:text-left text-[#718975] font-bold tracking-wider">ҚАТЫСУЫҢЫЗ</label>
             <select name="select" id="select" class="w-full py-2 px-6 border-2 rounded text-[#BC8958] mt-2 mb-6 font-bold">
                 <option value="Қатысамын">Қатысамын</option>
                 <option value="Жұбайыммен барамын">Жұбайыммен барамын</option>
                 <option value="Өкінішке орай, келе алмаймын">Өкінішке орай, келе алмаймын</option>
             </select>
             <button type="submit"
-                class="w-full bg-[#718975] py-2 rounded max-md:text-sm text-white tracking-widest font-bold font-['main'] hover:bg-[#61a46c] transition">
+                class="w-full bg-[#718975] py-2 rounded max-md:text-md text-white tracking-widest font-bold font-['main'] hover:bg-[#61a46c] transition">
                 ЖІБЕРУ
             </button>
         </form>
         <div class="my-10 max-md:w-[80%] max-md:mx-auto">
-            <h2 class="text-3xl max-md:text-xl max-md:text-center font-['kz'] font-bold text-[#BC8958]">Келіңіздер, қуанышымыздың куәсі болыңыздар!</h2>
+            <h2 class="text-3xl max-md:text-2xl max-md:text-center font-['kz'] font-bold text-[#BC8958]">Келіңіздер, қуанышымыздың куәсі болыңыздар!</h2>
         </div>
     </div>
 
